@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G3025" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AccountManagedObject" representedClassName="AccountManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="guid" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TransactionManagedObject" inverseName="account" inverseEntity="TransactionManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="EnveloppeManagedObject" representedClassName="EnveloppeManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="guid" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TransactionManagedObject" inverseName="enveloppe" inverseEntity="TransactionManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="TransactionManagedObject" representedClassName="TransactionManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="balance" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="operationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AccountManagedObject" inverseName="transactions" inverseEntity="AccountManagedObject" syncable="YES"/>
+        <relationship name="enveloppe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EnveloppeManagedObject" inverseName="transactions" inverseEntity="EnveloppeManagedObject" syncable="YES"/>
+        <relationship name="next" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TransactionManagedObject" inverseName="previous" inverseEntity="TransactionManagedObject" syncable="YES"/>
+        <relationship name="previous" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TransactionManagedObject" inverseName="next" inverseEntity="TransactionManagedObject" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TransactionManagedObject" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="EnveloppeManagedObject" positionX="-54" positionY="27" width="128" height="75"/>
+        <element name="AccountManagedObject" positionX="-36" positionY="54" width="128" height="90"/>
+    </elements>
 </model>

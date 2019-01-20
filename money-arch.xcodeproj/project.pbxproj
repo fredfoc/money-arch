@@ -11,7 +11,45 @@
 		36DD959D21F12E0F00586999 /* money_arch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36DD959B21F12E0F00586999 /* money_arch.xcdatamodeld */; };
 		36DD959F21F12E1000586999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36DD959E21F12E1000586999 /* Assets.xcassets */; };
 		36DD95A221F12E1000586999 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DD95A021F12E1000586999 /* MainMenu.xib */; };
+		36DD95AE21F1388700586999 /* Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95AD21F1388700586999 /* Scenes.swift */; };
+		36DD95B121F138C400586999 /* OutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95AF21F138C400586999 /* OutlineViewController.swift */; };
+		36DD95B221F138C400586999 /* OutlineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DD95B021F138C400586999 /* OutlineViewController.xib */; };
+		36DD95B521F1390F00586999 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95B321F1390F00586999 /* TransactionsViewController.swift */; };
+		36DD95B621F1390F00586999 /* TransactionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DD95B421F1390F00586999 /* TransactionsViewController.xib */; };
+		36DD95BA21F13B5B00586999 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95B821F13B5B00586999 /* MainWindowController.swift */; };
+		36DD95BB21F13B5B00586999 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DD95B921F13B5B00586999 /* MainWindowController.xib */; };
+		36DD95BF21F148AA00586999 /* MainStageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95BD21F148AA00586999 /* MainStageViewController.swift */; };
+		36DD95C021F148AA00586999 /* MainStageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DD95BE21F148AA00586999 /* MainStageViewController.xib */; };
+		36DD95C821F3D05700586999 /* money_archTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95C721F3D05700586999 /* money_archTests.swift */; };
+		36DD95D221F3D48300586999 /* InsertTransactionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95D121F3D48300586999 /* InsertTransactionAction.swift */; };
+		36DD95D321F3D48700586999 /* InsertTransactionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95D121F3D48300586999 /* InsertTransactionAction.swift */; };
+		36DD95D521F3D4B300586999 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95D421F3D4B300586999 /* Action.swift */; };
+		36DD95D621F3D4C900586999 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95D421F3D4B300586999 /* Action.swift */; };
+		36DD95D921F3D50400586999 /* RootReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95D821F3D50400586999 /* RootReducer.swift */; };
+		36DD95DA21F3D50400586999 /* RootReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95D821F3D50400586999 /* RootReducer.swift */; };
+		36DD95E221F3D56700586999 /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95E121F3D56700586999 /* RootState.swift */; };
+		36DD95E321F3D56700586999 /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95E121F3D56700586999 /* RootState.swift */; };
+		36DD95E521F3D6B300586999 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95E421F3D6B300586999 /* DataStore.swift */; };
+		36DD95E621F3D6B300586999 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95E421F3D6B300586999 /* DataStore.swift */; };
+		36DD95E821F3D71500586999 /* DefaultDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95E721F3D71500586999 /* DefaultDataStore.swift */; };
+		36DD95E921F3D71500586999 /* DefaultDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95E721F3D71500586999 /* DefaultDataStore.swift */; };
+		36DD95EC21F3E23C00586999 /* TransactionsListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95EB21F3E23C00586999 /* TransactionsListState.swift */; };
+		36DD95ED21F3E23C00586999 /* TransactionsListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95EB21F3E23C00586999 /* TransactionsListState.swift */; };
+		36DD95EF21F3E38C00586999 /* TransactionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95EE21F3E38C00586999 /* TransactionState.swift */; };
+		36DD95F021F3E38C00586999 /* TransactionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95EE21F3E38C00586999 /* TransactionState.swift */; };
+		36DD95F221F3EE0700586999 /* TransactionsListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95F121F3EE0700586999 /* TransactionsListReducer.swift */; };
+		36DD95F321F3EE0700586999 /* TransactionsListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95F121F3EE0700586999 /* TransactionsListReducer.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36DD95CA21F3D05700586999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36DD958E21F12E0F00586999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36DD959521F12E0F00586999;
+			remoteInfo = "money-arch";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		36DD959621F12E0F00586999 /* money-arch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "money-arch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +59,38 @@
 		36DD95A121F12E1000586999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		36DD95A321F12E1000586999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36DD95A421F12E1000586999 /* money_arch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = money_arch.entitlements; sourceTree = "<group>"; };
+		36DD95AD21F1388700586999 /* Scenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes.swift; sourceTree = "<group>"; };
+		36DD95AF21F138C400586999 /* OutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewController.swift; sourceTree = "<group>"; };
+		36DD95B021F138C400586999 /* OutlineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OutlineViewController.xib; sourceTree = "<group>"; };
+		36DD95B321F1390F00586999 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		36DD95B421F1390F00586999 /* TransactionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsViewController.xib; sourceTree = "<group>"; };
+		36DD95B821F13B5B00586999 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		36DD95B921F13B5B00586999 /* MainWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		36DD95BD21F148AA00586999 /* MainStageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStageViewController.swift; sourceTree = "<group>"; };
+		36DD95BE21F148AA00586999 /* MainStageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainStageViewController.xib; sourceTree = "<group>"; };
+		36DD95C521F3D05600586999 /* money-archTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "money-archTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DD95C721F3D05700586999 /* money_archTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = money_archTests.swift; sourceTree = "<group>"; };
+		36DD95C921F3D05700586999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36DD95D121F3D48300586999 /* InsertTransactionAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertTransactionAction.swift; sourceTree = "<group>"; };
+		36DD95D421F3D4B300586999 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		36DD95D821F3D50400586999 /* RootReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootReducer.swift; sourceTree = "<group>"; };
+		36DD95E121F3D56700586999 /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
+		36DD95E421F3D6B300586999 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		36DD95E721F3D71500586999 /* DefaultDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataStore.swift; sourceTree = "<group>"; };
+		36DD95EB21F3E23C00586999 /* TransactionsListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListState.swift; sourceTree = "<group>"; };
+		36DD95EE21F3E38C00586999 /* TransactionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionState.swift; sourceTree = "<group>"; };
+		36DD95F121F3EE0700586999 /* TransactionsListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		36DD959321F12E0F00586999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36DD95C221F3D05600586999 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				36DD959821F12E0F00586999 /* money-arch */,
+				36DD95C621F3D05700586999 /* money-archTests */,
 				36DD959721F12E0F00586999 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				36DD959621F12E0F00586999 /* money-arch.app */,
+				36DD95C521F3D05600586999 /* money-archTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +121,8 @@
 		36DD959821F12E0F00586999 /* money-arch */ = {
 			isa = PBXGroup;
 			children = (
+				36DD95CF21F3D45D00586999 /* DataStore */,
+				36DD95AA21F137F400586999 /* Scenes */,
 				36DD959921F12E0F00586999 /* AppDelegate.swift */,
 				36DD959E21F12E1000586999 /* Assets.xcassets */,
 				36DD95A021F12E1000586999 /* MainMenu.xib */,
@@ -61,6 +131,103 @@
 				36DD959B21F12E0F00586999 /* money_arch.xcdatamodeld */,
 			);
 			path = "money-arch";
+			sourceTree = "<group>";
+		};
+		36DD95AA21F137F400586999 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				36DD95BC21F1488500586999 /* MainStage */,
+				36DD95B721F139B600586999 /* MainWindow */,
+				36DD95AC21F1387600586999 /* Transactions */,
+				36DD95AB21F1380900586999 /* Outline */,
+				36DD95AD21F1388700586999 /* Scenes.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		36DD95AB21F1380900586999 /* Outline */ = {
+			isa = PBXGroup;
+			children = (
+				36DD95AF21F138C400586999 /* OutlineViewController.swift */,
+				36DD95B021F138C400586999 /* OutlineViewController.xib */,
+			);
+			path = Outline;
+			sourceTree = "<group>";
+		};
+		36DD95AC21F1387600586999 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				36DD95B321F1390F00586999 /* TransactionsViewController.swift */,
+				36DD95B421F1390F00586999 /* TransactionsViewController.xib */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		36DD95B721F139B600586999 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				36DD95B821F13B5B00586999 /* MainWindowController.swift */,
+				36DD95B921F13B5B00586999 /* MainWindowController.xib */,
+			);
+			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		36DD95BC21F1488500586999 /* MainStage */ = {
+			isa = PBXGroup;
+			children = (
+				36DD95BD21F148AA00586999 /* MainStageViewController.swift */,
+				36DD95BE21F148AA00586999 /* MainStageViewController.xib */,
+			);
+			path = MainStage;
+			sourceTree = "<group>";
+		};
+		36DD95C621F3D05700586999 /* money-archTests */ = {
+			isa = PBXGroup;
+			children = (
+				36DD95C721F3D05700586999 /* money_archTests.swift */,
+				36DD95C921F3D05700586999 /* Info.plist */,
+			);
+			path = "money-archTests";
+			sourceTree = "<group>";
+		};
+		36DD95CF21F3D45D00586999 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				36DD95EA21F3D9BC00586999 /* States */,
+				36DD95D721F3D4EC00586999 /* Reducers */,
+				36DD95D021F3D46700586999 /* Actions */,
+				36DD95E421F3D6B300586999 /* DataStore.swift */,
+				36DD95E721F3D71500586999 /* DefaultDataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		36DD95D021F3D46700586999 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				36DD95D121F3D48300586999 /* InsertTransactionAction.swift */,
+				36DD95D421F3D4B300586999 /* Action.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		36DD95D721F3D4EC00586999 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				36DD95D821F3D50400586999 /* RootReducer.swift */,
+				36DD95F121F3EE0700586999 /* TransactionsListReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		36DD95EA21F3D9BC00586999 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				36DD95E121F3D56700586999 /* RootState.swift */,
+				36DD95EB21F3E23C00586999 /* TransactionsListState.swift */,
+				36DD95EE21F3E38C00586999 /* TransactionState.swift */,
+			);
+			path = States;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +250,24 @@
 			productReference = 36DD959621F12E0F00586999 /* money-arch.app */;
 			productType = "com.apple.product-type.application";
 		};
+		36DD95C421F3D05600586999 /* money-archTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36DD95CC21F3D05700586999 /* Build configuration list for PBXNativeTarget "money-archTests" */;
+			buildPhases = (
+				36DD95C121F3D05600586999 /* Sources */,
+				36DD95C221F3D05600586999 /* Frameworks */,
+				36DD95C321F3D05600586999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36DD95CB21F3D05700586999 /* PBXTargetDependency */,
+			);
+			name = "money-archTests";
+			productName = "money-archTests";
+			productReference = 36DD95C521F3D05600586999 /* money-archTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +280,10 @@
 				TargetAttributes = {
 					36DD959521F12E0F00586999 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					36DD95C421F3D05600586999 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 36DD959521F12E0F00586999;
 					};
 				};
 			};
@@ -112,6 +301,7 @@
 			projectRoot = "";
 			targets = (
 				36DD959521F12E0F00586999 /* money-arch */,
+				36DD95C421F3D05600586999 /* money-archTests */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +313,17 @@
 			files = (
 				36DD959F21F12E1000586999 /* Assets.xcassets in Resources */,
 				36DD95A221F12E1000586999 /* MainMenu.xib in Resources */,
+				36DD95C021F148AA00586999 /* MainStageViewController.xib in Resources */,
+				36DD95B221F138C400586999 /* OutlineViewController.xib in Resources */,
+				36DD95B621F1390F00586999 /* TransactionsViewController.xib in Resources */,
+				36DD95BB21F13B5B00586999 /* MainWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36DD95C321F3D05600586999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,12 +334,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36DD95E221F3D56700586999 /* RootState.swift in Sources */,
+				36DD95E821F3D71500586999 /* DefaultDataStore.swift in Sources */,
+				36DD95BF21F148AA00586999 /* MainStageViewController.swift in Sources */,
+				36DD95F221F3EE0700586999 /* TransactionsListReducer.swift in Sources */,
+				36DD95D521F3D4B300586999 /* Action.swift in Sources */,
+				36DD95D921F3D50400586999 /* RootReducer.swift in Sources */,
+				36DD95D221F3D48300586999 /* InsertTransactionAction.swift in Sources */,
 				36DD959D21F12E0F00586999 /* money_arch.xcdatamodeld in Sources */,
+				36DD95E521F3D6B300586999 /* DataStore.swift in Sources */,
+				36DD95B121F138C400586999 /* OutlineViewController.swift in Sources */,
+				36DD95BA21F13B5B00586999 /* MainWindowController.swift in Sources */,
 				36DD959A21F12E0F00586999 /* AppDelegate.swift in Sources */,
+				36DD95EC21F3E23C00586999 /* TransactionsListState.swift in Sources */,
+				36DD95EF21F3E38C00586999 /* TransactionState.swift in Sources */,
+				36DD95AE21F1388700586999 /* Scenes.swift in Sources */,
+				36DD95B521F1390F00586999 /* TransactionsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36DD95C121F3D05600586999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36DD95C821F3D05700586999 /* money_archTests.swift in Sources */,
+				36DD95E621F3D6B300586999 /* DataStore.swift in Sources */,
+				36DD95ED21F3E23C00586999 /* TransactionsListState.swift in Sources */,
+				36DD95F321F3EE0700586999 /* TransactionsListReducer.swift in Sources */,
+				36DD95D621F3D4C900586999 /* Action.swift in Sources */,
+				36DD95DA21F3D50400586999 /* RootReducer.swift in Sources */,
+				36DD95F021F3E38C00586999 /* TransactionState.swift in Sources */,
+				36DD95D321F3D48700586999 /* InsertTransactionAction.swift in Sources */,
+				36DD95E921F3D71500586999 /* DefaultDataStore.swift in Sources */,
+				36DD95E321F3D56700586999 /* RootState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36DD95CB21F3D05700586999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36DD959521F12E0F00586999 /* money-arch */;
+			targetProxy = 36DD95CA21F3D05700586999 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		36DD95A021F12E1000586999 /* MainMenu.xib */ = {
@@ -303,6 +543,46 @@
 			};
 			name = Release;
 		};
+		36DD95CD21F3D05700586999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SFF7Z495BM;
+				INFOPLIST_FILE = "money-archTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umxprime.money-archTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/money-arch.app/Contents/MacOS/money-arch";
+			};
+			name = Debug;
+		};
+		36DD95CE21F3D05700586999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SFF7Z495BM;
+				INFOPLIST_FILE = "money-archTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umxprime.money-archTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/money-arch.app/Contents/MacOS/money-arch";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -320,6 +600,15 @@
 			buildConfigurations = (
 				36DD95A821F12E1000586999 /* Debug */,
 				36DD95A921F12E1000586999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36DD95CC21F3D05700586999 /* Build configuration list for PBXNativeTarget "money-archTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36DD95CD21F3D05700586999 /* Debug */,
+				36DD95CE21F3D05700586999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

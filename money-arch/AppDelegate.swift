@@ -10,11 +10,9 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    @IBOutlet weak var window: NSWindow!
-
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        let mainWindowController = Scenes.Factory.createMainWindow()
+        mainWindowController.showWindow(self)
         // Insert code here to initialize your application
     }
 
