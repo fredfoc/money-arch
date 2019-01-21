@@ -20,7 +20,7 @@
 		36DD95BB21F13B5B00586999 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DD95B921F13B5B00586999 /* MainWindowController.xib */; };
 		36DD95BF21F148AA00586999 /* MainStageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95BD21F148AA00586999 /* MainStageViewController.swift */; };
 		36DD95C021F148AA00586999 /* MainStageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DD95BE21F148AA00586999 /* MainStageViewController.xib */; };
-		36DD95C821F3D05700586999 /* money_archTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95C721F3D05700586999 /* money_archTests.swift */; };
+		36DD95C821F3D05700586999 /* DataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95C721F3D05700586999 /* DataStoreTests.swift */; };
 		36DD95D221F3D48300586999 /* InsertTransactionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95D121F3D48300586999 /* InsertTransactionAction.swift */; };
 		36DD95D321F3D48700586999 /* InsertTransactionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95D121F3D48300586999 /* InsertTransactionAction.swift */; };
 		36DD95D521F3D4B300586999 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95D421F3D4B300586999 /* Action.swift */; };
@@ -39,6 +39,7 @@
 		36DD95F021F3E38C00586999 /* TransactionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95EE21F3E38C00586999 /* TransactionState.swift */; };
 		36DD95F221F3EE0700586999 /* TransactionsListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95F121F3EE0700586999 /* TransactionsListReducer.swift */; };
 		36DD95F321F3EE0700586999 /* TransactionsListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95F121F3EE0700586999 /* TransactionsListReducer.swift */; };
+		36DD95F521F668E000586999 /* TransactionsListReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95F421F668E000586999 /* TransactionsListReducerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +70,7 @@
 		36DD95BD21F148AA00586999 /* MainStageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStageViewController.swift; sourceTree = "<group>"; };
 		36DD95BE21F148AA00586999 /* MainStageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainStageViewController.xib; sourceTree = "<group>"; };
 		36DD95C521F3D05600586999 /* money-archTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "money-archTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		36DD95C721F3D05700586999 /* money_archTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = money_archTests.swift; sourceTree = "<group>"; };
+		36DD95C721F3D05700586999 /* DataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreTests.swift; sourceTree = "<group>"; };
 		36DD95C921F3D05700586999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36DD95D121F3D48300586999 /* InsertTransactionAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertTransactionAction.swift; sourceTree = "<group>"; };
 		36DD95D421F3D4B300586999 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 		36DD95EB21F3E23C00586999 /* TransactionsListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListState.swift; sourceTree = "<group>"; };
 		36DD95EE21F3E38C00586999 /* TransactionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionState.swift; sourceTree = "<group>"; };
 		36DD95F121F3EE0700586999 /* TransactionsListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListReducer.swift; sourceTree = "<group>"; };
+		36DD95F421F668E000586999 /* TransactionsListReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListReducerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +186,8 @@
 		36DD95C621F3D05700586999 /* money-archTests */ = {
 			isa = PBXGroup;
 			children = (
-				36DD95C721F3D05700586999 /* money_archTests.swift */,
+				36DD95F821F66A2D00586999 /* DataStore */,
+				36DD95F721F66A1A00586999 /* Reducers */,
 				36DD95C921F3D05700586999 /* Info.plist */,
 			);
 			path = "money-archTests";
@@ -228,6 +231,22 @@
 				36DD95EE21F3E38C00586999 /* TransactionState.swift */,
 			);
 			path = States;
+			sourceTree = "<group>";
+		};
+		36DD95F721F66A1A00586999 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				36DD95F421F668E000586999 /* TransactionsListReducerTests.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		36DD95F821F66A2D00586999 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				36DD95C721F3D05700586999 /* DataStoreTests.swift */,
+			);
+			path = DataStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,8 +376,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36DD95C821F3D05700586999 /* money_archTests.swift in Sources */,
+				36DD95C821F3D05700586999 /* DataStoreTests.swift in Sources */,
 				36DD95E621F3D6B300586999 /* DataStore.swift in Sources */,
+				36DD95F521F668E000586999 /* TransactionsListReducerTests.swift in Sources */,
 				36DD95ED21F3E23C00586999 /* TransactionsListState.swift in Sources */,
 				36DD95F321F3EE0700586999 /* TransactionsListReducer.swift in Sources */,
 				36DD95D621F3D4C900586999 /* Action.swift in Sources */,

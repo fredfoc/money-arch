@@ -1,5 +1,5 @@
 //
-//  money_archTests.swift
+//  DataStoreTests.swift
 //  money-archTests
 //
 //  Created by Maxime CHAPELET on 19/01/2019.
@@ -10,7 +10,7 @@ import XCTest
 
 typealias TestDataStore = DefaultDataStore<RootState>
 
-class money_archTests: XCTestCase {
+class DataStoreTests: XCTestCase {
     enum Error : Swift.Error {
         case UnexpectedNil
     }
