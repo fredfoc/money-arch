@@ -10,12 +10,22 @@ import Foundation
 
 protocol TransactionState {
     var creationDate:Date {get}
+    var uniqueIdentifier:UUID {get}
 }
 
 protocol MutableTransactionState : TransactionState {
-    var creationDate:Date {get set}
+    
 }
 
-struct TransactionStateImpl : MutableTransactionState {
+struct TransactionStateImpl : Equatable, MutableTransactionState {
+    static func == (lhs: TransactionStateImpl, rhs: TransactionStateImpl) -> Bool {
+        return lhs.uniqueIdentifier == rhs.uniqueIdentifier
+    }
+    
     internal var creationDate: Date
+    internal var uniqueIdentifier: UUID
+    init() {
+        creationDate = Date()
+        uniqueIdentifier = UUID()
+    }
 }

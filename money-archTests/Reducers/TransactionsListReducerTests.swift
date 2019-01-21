@@ -9,7 +9,10 @@
 import XCTest
 
 class TransactionsListReducerTests: XCTestCase {
-
+    enum Error : Swift.Error {
+        case UnexpectedNil
+    }
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -25,6 +28,17 @@ class TransactionsListReducerTests: XCTestCase {
         let state = transactionsListReducer(rootState.transactionsList, InsertTransactionAction())
         XCTAssertEqual(state.total, 1)
         XCTAssertEqual(state.transactions.count, 1)
+    }
+    
+    func testTransactionDeletion() throws {
+        let rootState = RootStateImpl()
+        var state = transactionsListReducer(rootState.transactionsList, InsertTransactionAction())
+        guard let firstTransaction = state.transactions.first else {
+            throw Error.UnexpectedNil
+        }
+        state = transactionsListReducer(state, DeleteTransactionAction(uniqueIdentifier: firstTransaction.uniqueIdentifier))
+        XCTAssertEqual(state.total, 0)
+        XCTAssertEqual(state.transactions.count, 0)
     }
 
 }

@@ -40,6 +40,8 @@
 		36DD95F221F3EE0700586999 /* TransactionsListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95F121F3EE0700586999 /* TransactionsListReducer.swift */; };
 		36DD95F321F3EE0700586999 /* TransactionsListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95F121F3EE0700586999 /* TransactionsListReducer.swift */; };
 		36DD95F521F668E000586999 /* TransactionsListReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95F421F668E000586999 /* TransactionsListReducerTests.swift */; };
+		36DD95FA21F66EE800586999 /* DeleteTransactionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95F921F66EE800586999 /* DeleteTransactionAction.swift */; };
+		36DD95FB21F66EE800586999 /* DeleteTransactionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD95F921F66EE800586999 /* DeleteTransactionAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,7 @@
 		36DD95EE21F3E38C00586999 /* TransactionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionState.swift; sourceTree = "<group>"; };
 		36DD95F121F3EE0700586999 /* TransactionsListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListReducer.swift; sourceTree = "<group>"; };
 		36DD95F421F668E000586999 /* TransactionsListReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListReducerTests.swift; sourceTree = "<group>"; };
+		36DD95F921F66EE800586999 /* DeleteTransactionAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTransactionAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +213,7 @@
 			children = (
 				36DD95D121F3D48300586999 /* InsertTransactionAction.swift */,
 				36DD95D421F3D4B300586999 /* Action.swift */,
+				36DD95F921F66EE800586999 /* DeleteTransactionAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -363,6 +367,7 @@
 				36DD959D21F12E0F00586999 /* money_arch.xcdatamodeld in Sources */,
 				36DD95E521F3D6B300586999 /* DataStore.swift in Sources */,
 				36DD95B121F138C400586999 /* OutlineViewController.swift in Sources */,
+				36DD95FA21F66EE800586999 /* DeleteTransactionAction.swift in Sources */,
 				36DD95BA21F13B5B00586999 /* MainWindowController.swift in Sources */,
 				36DD959A21F12E0F00586999 /* AppDelegate.swift in Sources */,
 				36DD95EC21F3E23C00586999 /* TransactionsListState.swift in Sources */,
@@ -387,6 +392,7 @@
 				36DD95D321F3D48700586999 /* InsertTransactionAction.swift in Sources */,
 				36DD95E921F3D71500586999 /* DefaultDataStore.swift in Sources */,
 				36DD95E321F3D56700586999 /* RootState.swift in Sources */,
+				36DD95FB21F66EE800586999 /* DeleteTransactionAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

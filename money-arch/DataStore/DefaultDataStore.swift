@@ -29,7 +29,8 @@ extension DefaultDataStore : DataStore {
     }
     
     func unsubscribe(_ subscription: DataStoreSubscription<DefaultDataStore>) {
-        
+        let identifier = ObjectIdentifier(subscription)
+        subscriptions.removeValue(forKey: identifier)
     }
    
     func dispatch(_ action: Action) {

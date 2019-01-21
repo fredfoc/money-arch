@@ -14,8 +14,20 @@ let transactionsListReducer = { (state:TransactionsListState, action:Action) -> 
     case let action as InsertTransactionAction:
         if var mutableState = state as? MutableTransactionsListState {
             var list = state.transactions
-            let transaction = TransactionStateImpl(creationDate: action.creationDate)
+            let transaction = TransactionStateImpl()
             list.append(transaction)
+            mutableState.transactions = list
+            mutableState.total = list.count
+            state = mutableState
+        }
+    case let action as DeleteTransactionAction:
+        if var mutableState = state as? MutableTransactionsListState {
+            var list:[TransactionState] = state.transactions
+            if let result = list.index(where: { (transaction:TransactionState) -> Bool in
+                return transaction.uniqueIdentifier == action.uniqueIdentifier
+            }) {
+                list.remove(at: result)
+            }
             mutableState.transactions = list
             mutableState.total = list.count
             state = mutableState

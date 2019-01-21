@@ -9,7 +9,7 @@
 import XCTest
 
 typealias TestDataStore = DefaultDataStore<RootState>
-
+struct DummyAction:Action{}
 class DataStoreTests: XCTestCase {
     enum Error : Swift.Error {
         case UnexpectedNil
@@ -32,13 +32,12 @@ class DataStoreTests: XCTestCase {
         XCTAssertNotNil(dataStore)
     }
     
-    func getState() throws -> TestDataStore.State {
+    func getState() -> TestDataStore.State {
         return dataStore.getState()
     }
     
     func testEmptyTransactionList() throws {
-        let state = try getState()
-        XCTAssertEqual(state.transactionsList.offset, 0)
+        let state = getState()
         XCTAssertEqual(state.transactionsList.total, 0)
         XCTAssertEqual(state.transactionsList.transactions.count, 0)
     }
@@ -46,8 +45,7 @@ class DataStoreTests: XCTestCase {
     func testTransactionInsertion() throws {
         let insertion = InsertTransactionAction()
         dataStore.dispatch(insertion)
-        let state = try getState()
-        XCTAssertEqual(state.transactionsList.offset, 0)
+        let state = getState()
         XCTAssertEqual(state.transactionsList.total, 1)
         XCTAssertEqual(state.transactionsList.transactions.count, 1)
     }
@@ -58,22 +56,45 @@ class DataStoreTests: XCTestCase {
             let insertion = InsertTransactionAction()
             dataStore.dispatch(insertion)
         }
-        let state = try getState()
-        XCTAssertEqual(state.transactionsList.offset, 0)
+        let state = getState()
         XCTAssertEqual(state.transactionsList.total, insertionsCount)
         XCTAssertEqual(state.transactionsList.transactions.count, insertionsCount)
     }
     
     func testDataStoreSubscription() throws {
         let expectation = XCTestExpectation(description: "Receive state update")
-        let _ = dataStore.subscribe { (state) in
-            XCTAssertEqual(state.transactionsList.offset, 0)
-            XCTAssertEqual(state.transactionsList.total, 1)
-            XCTAssertEqual(state.transactionsList.transactions.count, 1)
+        let subscription = dataStore.subscribe { (newState) in
             expectation.fulfill()
         }
+        let action = DummyAction()
+        dataStore.dispatch(action)
+        wait(for: [expectation], timeout: 1.0)
+        dataStore.unsubscribe(subscription)
+    }
+    
+    func testDataStoreUnsubscription() throws {
+        let expectation = XCTestExpectation(description: "Receive state update")
+        expectation.isInverted = true
+        let subscription = dataStore.subscribe { (newState) in
+            expectation.fulfill()
+        }
+        dataStore.unsubscribe(subscription)
+        let action = DummyAction()
+        dataStore.dispatch(action)
+        wait(for: [expectation], timeout: 1.0)
+    }
+    
+    func testTransactionDeletion() throws {
         let insertion = InsertTransactionAction()
         dataStore.dispatch(insertion)
-        wait(for: [expectation], timeout: 1.0)
+        let insertionState = getState()
+        guard let firstTransaction = insertionState.transactionsList.transactions.first else {
+            throw Error.UnexpectedNil
+        }
+        let deletion = DeleteTransactionAction(uniqueIdentifier: firstTransaction.uniqueIdentifier)
+        dataStore.dispatch(deletion)
+        let deletionState = getState()
+        XCTAssertEqual(deletionState.transactionsList.total, 0)
+        XCTAssertEqual(deletionState.transactionsList.transactions.count, 0)
     }
 }
