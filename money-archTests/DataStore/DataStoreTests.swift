@@ -97,4 +97,18 @@ class DataStoreTests: XCTestCase {
         XCTAssertEqual(deletionState.transactionsList.total, 0)
         XCTAssertEqual(deletionState.transactionsList.transactions.count, 0)
     }
+    
+    func testThunkDispatch() {
+        let expectation = XCTestExpectation(description: "Receive thunk update")
+        let thunk = Thunk<RootState> { (dispatch, getState) in
+            let action = DummyAction()
+            dispatch(action)
+        }
+        let subscription = dataStore.subscribe { (state) in
+            expectation.fulfill()
+        }
+        dataStore.dispatch(thunk)
+        wait(for: [expectation], timeout: 1.0)
+        dataStore.unsubscribe(subscription)
+    }
 }

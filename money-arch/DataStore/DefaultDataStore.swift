@@ -11,8 +11,9 @@ import Foundation
 struct InitAction:Action {}
 
 final class DefaultDataStore<State:Any> {
-    let reducer:(State?,Action)->State
-    var state:State
+    private let reducer:(State?,Action)->State
+    private let mutex = DispatchQueue.init(label: "com.umxprime.dataStoreMutex")
+    private var state:State
     init(_ reducer:@escaping (State?, Action)->State) {
         self.reducer = reducer
         self.state = reducer(nil, InitAction())
@@ -24,23 +25,39 @@ extension DefaultDataStore : DataStore {
     func subscribe(_ event: @escaping (State) -> Void) -> DataStoreSubscription<DefaultDataStore<State>> {
         let subscription = DataStoreSubscription(dataStore: self)
         let identifier = ObjectIdentifier(subscription)
-        subscriptions[identifier] = event
+        mutex.sync {
+            subscriptions[identifier] = event
+        }
         return subscription
     }
     
     func unsubscribe(_ subscription: DataStoreSubscription<DefaultDataStore>) {
         let identifier = ObjectIdentifier(subscription)
-        subscriptions.removeValue(forKey: identifier)
+        mutex.sync {
+            subscriptions[identifier] = nil
+        }
     }
    
     func dispatch(_ action: Action) {
-        self.state = reducer(state, action)
-        subscriptions.forEach { (key, event) in
-            event(self.state)
+        let subscriptions = mutex.sync {
+            self.subscriptions
         }
+        switch action {
+        case let thunk as Thunk<State>:
+            thunk.callbacks(self.dispatch, self.getState)
+        default:
+            let newState = reducer(getState(), action)
+            mutex.sync {
+                self.state = newState
+            }
+            subscriptions.forEach { (key, event) in
+                event(newState)
+            }
+        }
+        
     }
     
     func getState() -> State {
-        return self.state
+        return mutex.sync { self.state }
     }
 }
