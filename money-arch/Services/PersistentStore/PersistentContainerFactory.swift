@@ -45,7 +45,10 @@ extension Services.PersistentStore {
              application to it. This property is optional since there are legitimate
              error conditions that could cause the creation of the store to fail.
              */
-            let container = NSPersistentContainer(name: "money_arch")
+            guard let managedObjectModel = NSManagedObjectModel.mergedModel(from: [Bundle(for: Services.PersistentStore.Service.self)]) else {
+                fatalError("Can't find object model")
+            }
+            let container = NSPersistentContainer(name: "money_arch", managedObjectModel:managedObjectModel)
             let description = NSPersistentStoreDescription()
             description.type = NSInMemoryStoreType
             description.shouldAddStoreAsynchronously = false // Make it simpler in test env

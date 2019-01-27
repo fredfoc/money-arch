@@ -24,12 +24,49 @@ class CoreDataPersistentStoreTests: XCTestCase {
         super.tearDown()
     }
     
-    func testInsertAccount() {
+    func testAccountInsertion() {
         let expectation = XCTestExpectation(description: "Complete with account object")
         persistentStore.insertAccount(name:"Test") { account in
             expectation.fulfill()
         }
         wait(for: [expectation], timeout: 1.0)
     }
+    
+    func testAccountListEmptiness() {
+        let expectation = XCTestExpectation(description: "Complete with empty list")
+        persistentStore.listAccounts { (accounts) in
+            XCTAssertEqual(accounts.count, 0)
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 1.0)
+    }
+    
+    func testAccountListContainingOneEntry() {
+        let expectation = XCTestExpectation(description: "Complete with one account")
+        persistentStore.insertAccount(name:"Test") { [unowned self] account in
+            self.persistentStore.listAccounts { (accounts) in
+                XCTAssertEqual(accounts.count, 1)
+                expectation.fulfill()
+            }
+        }
+        wait(for: [expectation], timeout: 1.0)
+    }
 
+    func testAccountRename() {
+        let expectation = XCTestExpectation(description: "Complete with renamed account")
+        persistentStore.insertAccount(name:"Test") { [unowned self] account in
+            var editedAccount:MutablePersistentStoreAccount = account.mutable()
+            editedAccount.name = "RenamedTest"
+            self.persistentStore.updateAccount(editedAccount) { account in
+                self.persistentStore.listAccounts { (accounts) in
+                    guard let first = accounts.first else {
+                        return
+                    }
+                    XCTAssertEqual(first.name, "RenamedTest")
+                    expectation.fulfill()
+                }
+            }
+        }
+        wait(for: [expectation], timeout: 1.0)
+    }
 }
