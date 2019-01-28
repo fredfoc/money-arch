@@ -9,3 +9,10 @@
 import Foundation
 
 enum Services {}
+
+class ServicesFactory {
+    static var persistentStore:PersistentStore = {
+        let container = Services.PersistentStore.ContainerFactory.persistentSQLContainer()
+        return Services.PersistentStore.Service(persistentContainer: container)
+    }()
+}

@@ -16,6 +16,22 @@
 		36283BD721FD10E9004CB71B /* PersistentStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36283BD521FD10E9004CB71B /* PersistentStoreService.swift */; };
 		36B5922A21FDD51A00FCC57E /* PersistentContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5922921FDD51A00FCC57E /* PersistentContainerFactory.swift */; };
 		36B5922B21FDD51A00FCC57E /* PersistentContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5922921FDD51A00FCC57E /* PersistentContainerFactory.swift */; };
+		36B5922D21FFA8FF00FCC57E /* MainStageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5922C21FFA8FF00FCC57E /* MainStageProtocols.swift */; };
+		36B5922E21FFA8FF00FCC57E /* MainStageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5922C21FFA8FF00FCC57E /* MainStageProtocols.swift */; };
+		36B5923021FFA92500FCC57E /* MainStageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5922F21FFA92500FCC57E /* MainStageModels.swift */; };
+		36B5923121FFA92500FCC57E /* MainStageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5922F21FFA92500FCC57E /* MainStageModels.swift */; };
+		36B5923321FFAB3A00FCC57E /* OutlineProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5923221FFAB3A00FCC57E /* OutlineProtocols.swift */; };
+		36B5923421FFAB3A00FCC57E /* OutlineProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5923221FFAB3A00FCC57E /* OutlineProtocols.swift */; };
+		36B5923B21FFABCC00FCC57E /* OutlineInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5923A21FFABCC00FCC57E /* OutlineInteractorTests.swift */; };
+		36B5923D21FFAD2900FCC57E /* OutlineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5923C21FFAD2900FCC57E /* OutlineInteractor.swift */; };
+		36B5923E21FFAD2900FCC57E /* OutlineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5923C21FFAD2900FCC57E /* OutlineInteractor.swift */; };
+		36B5924021FFB52600FCC57E /* AccountState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5923F21FFB52600FCC57E /* AccountState.swift */; };
+		36B5924121FFB52600FCC57E /* AccountState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5923F21FFB52600FCC57E /* AccountState.swift */; };
+		36B5924321FFB70F00FCC57E /* AccountsThunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5924221FFB70F00FCC57E /* AccountsThunk.swift */; };
+		36B5924421FFB70F00FCC57E /* AccountsThunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5924221FFB70F00FCC57E /* AccountsThunk.swift */; };
+		36B5924621FFBF6E00FCC57E /* OutlineModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5924521FFBF6E00FCC57E /* OutlineModels.swift */; };
+		36B5924721FFBF6E00FCC57E /* OutlineModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5924521FFBF6E00FCC57E /* OutlineModels.swift */; };
+		36B5924A21FFC02F00FCC57E /* Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5924921FFC02F00FCC57E /* Scenes.swift */; };
 		36D6E32121FD219B00DCC0DD /* money_arch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36DD959B21F12E0F00586999 /* money_arch.xcdatamodeld */; };
 		36DD959A21F12E0F00586999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD959921F12E0F00586999 /* AppDelegate.swift */; };
 		36DD959D21F12E0F00586999 /* money_arch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36DD959B21F12E0F00586999 /* money_arch.xcdatamodeld */; };
@@ -72,6 +88,15 @@
 		36283BD221FD0FF4004CB71B /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		36283BD521FD10E9004CB71B /* PersistentStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStoreService.swift; sourceTree = "<group>"; };
 		36B5922921FDD51A00FCC57E /* PersistentContainerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainerFactory.swift; sourceTree = "<group>"; };
+		36B5922C21FFA8FF00FCC57E /* MainStageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStageProtocols.swift; sourceTree = "<group>"; };
+		36B5922F21FFA92500FCC57E /* MainStageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStageModels.swift; sourceTree = "<group>"; };
+		36B5923221FFAB3A00FCC57E /* OutlineProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineProtocols.swift; sourceTree = "<group>"; };
+		36B5923A21FFABCC00FCC57E /* OutlineInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineInteractorTests.swift; sourceTree = "<group>"; };
+		36B5923C21FFAD2900FCC57E /* OutlineInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineInteractor.swift; sourceTree = "<group>"; };
+		36B5923F21FFB52600FCC57E /* AccountState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountState.swift; sourceTree = "<group>"; };
+		36B5924221FFB70F00FCC57E /* AccountsThunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountsThunk.swift; path = "money-arch/DataStore/Thunks/AccountsThunk.swift"; sourceTree = SOURCE_ROOT; };
+		36B5924521FFBF6E00FCC57E /* OutlineModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineModels.swift; sourceTree = "<group>"; };
+		36B5924921FFC02F00FCC57E /* Scenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes.swift; sourceTree = "<group>"; };
 		36DD959621F12E0F00586999 /* money-arch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "money-arch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DD959921F12E0F00586999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36DD959C21F12E0F00586999 /* money_arch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = money_arch.xcdatamodel; sourceTree = "<group>"; };
@@ -158,6 +183,23 @@
 			path = PersistentStore;
 			sourceTree = "<group>";
 		};
+		36B5923521FFAB5800FCC57E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				36B5923621FFAB7300FCC57E /* Outline */,
+				36B5924921FFC02F00FCC57E /* Scenes.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		36B5923621FFAB7300FCC57E /* Outline */ = {
+			isa = PBXGroup;
+			children = (
+				36B5923A21FFABCC00FCC57E /* OutlineInteractorTests.swift */,
+			);
+			path = Outline;
+			sourceTree = "<group>";
+		};
 		36DD958D21F12E0F00586999 = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +251,9 @@
 			children = (
 				36DD95AF21F138C400586999 /* OutlineViewController.swift */,
 				36DD95B021F138C400586999 /* OutlineViewController.xib */,
+				36B5923221FFAB3A00FCC57E /* OutlineProtocols.swift */,
+				36B5923C21FFAD2900FCC57E /* OutlineInteractor.swift */,
+				36B5924521FFBF6E00FCC57E /* OutlineModels.swift */,
 			);
 			path = Outline;
 			sourceTree = "<group>";
@@ -236,6 +281,8 @@
 			children = (
 				36DD95BD21F148AA00586999 /* MainStageViewController.swift */,
 				36DD95BE21F148AA00586999 /* MainStageViewController.xib */,
+				36B5922C21FFA8FF00FCC57E /* MainStageProtocols.swift */,
+				36B5922F21FFA92500FCC57E /* MainStageModels.swift */,
 			);
 			path = MainStage;
 			sourceTree = "<group>";
@@ -243,6 +290,7 @@
 		36DD95C621F3D05700586999 /* money-archTests */ = {
 			isa = PBXGroup;
 			children = (
+				36B5923521FFAB5800FCC57E /* Scenes */,
 				36283BCB21FD0F09004CB71B /* Services */,
 				36DD95F821F66A2D00586999 /* DataStore */,
 				36DD95F721F66A1A00586999 /* Reducers */,
@@ -289,6 +337,7 @@
 				36DD95E121F3D56700586999 /* RootState.swift */,
 				36DD95EB21F3E23C00586999 /* TransactionsListState.swift */,
 				36DD95EE21F3E38C00586999 /* TransactionState.swift */,
+				36B5923F21FFB52600FCC57E /* AccountState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -312,6 +361,7 @@
 		36DD95FC21F7B96400586999 /* Thunks */ = {
 			isa = PBXGroup;
 			children = (
+				36B5924221FFB70F00FCC57E /* AccountsThunk.swift */,
 				36DD95FD21F7B97C00586999 /* Thunk.swift */,
 			);
 			path = Thunks;
@@ -427,11 +477,15 @@
 				36DD95E821F3D71500586999 /* DefaultDataStore.swift in Sources */,
 				36DD95FE21F7B97C00586999 /* Thunk.swift in Sources */,
 				36DD95BF21F148AA00586999 /* MainStageViewController.swift in Sources */,
+				36B5922D21FFA8FF00FCC57E /* MainStageProtocols.swift in Sources */,
+				36B5923321FFAB3A00FCC57E /* OutlineProtocols.swift in Sources */,
 				36283BD321FD0FF4004CB71B /* Services.swift in Sources */,
 				36DD95F221F3EE0700586999 /* TransactionsListReducer.swift in Sources */,
 				36DD95D521F3D4B300586999 /* Action.swift in Sources */,
 				36DD95D921F3D50400586999 /* RootReducer.swift in Sources */,
+				36B5924321FFB70F00FCC57E /* AccountsThunk.swift in Sources */,
 				36DD95D221F3D48300586999 /* InsertTransactionAction.swift in Sources */,
+				36B5923D21FFAD2900FCC57E /* OutlineInteractor.swift in Sources */,
 				36DD959D21F12E0F00586999 /* money_arch.xcdatamodeld in Sources */,
 				36B5922A21FDD51A00FCC57E /* PersistentContainerFactory.swift in Sources */,
 				36DD95E521F3D6B300586999 /* DataStore.swift in Sources */,
@@ -440,9 +494,12 @@
 				36DD95BA21F13B5B00586999 /* MainWindowController.swift in Sources */,
 				36DD959A21F12E0F00586999 /* AppDelegate.swift in Sources */,
 				36DD95EC21F3E23C00586999 /* TransactionsListState.swift in Sources */,
+				36B5924021FFB52600FCC57E /* AccountState.swift in Sources */,
 				36DD95EF21F3E38C00586999 /* TransactionState.swift in Sources */,
+				36B5923021FFA92500FCC57E /* MainStageModels.swift in Sources */,
 				36DD95AE21F1388700586999 /* Scenes.swift in Sources */,
 				36DD95B521F1390F00586999 /* TransactionsViewController.swift in Sources */,
+				36B5924621FFBF6E00FCC57E /* OutlineModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,25 +507,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36B5924A21FFC02F00FCC57E /* Scenes.swift in Sources */,
 				36283BD721FD10E9004CB71B /* PersistentStoreService.swift in Sources */,
+				36B5924121FFB52600FCC57E /* AccountState.swift in Sources */,
 				36B5922B21FDD51A00FCC57E /* PersistentContainerFactory.swift in Sources */,
 				36DD95C821F3D05700586999 /* DataStoreTests.swift in Sources */,
 				36DD95E621F3D6B300586999 /* DataStore.swift in Sources */,
 				36D6E32121FD219B00DCC0DD /* money_arch.xcdatamodeld in Sources */,
 				36DD95F521F668E000586999 /* TransactionsListReducerTests.swift in Sources */,
+				36B5923421FFAB3A00FCC57E /* OutlineProtocols.swift in Sources */,
+				36B5924421FFB70F00FCC57E /* AccountsThunk.swift in Sources */,
 				36DD95ED21F3E23C00586999 /* TransactionsListState.swift in Sources */,
 				36DD95F321F3EE0700586999 /* TransactionsListReducer.swift in Sources */,
 				36DD95D621F3D4C900586999 /* Action.swift in Sources */,
 				36DD95DA21F3D50400586999 /* RootReducer.swift in Sources */,
 				36DD95F021F3E38C00586999 /* TransactionState.swift in Sources */,
 				36283BD121FD0F89004CB71B /* CoreDataPersistentStoreTests.swift in Sources */,
+				36B5923E21FFAD2900FCC57E /* OutlineInteractor.swift in Sources */,
+				36B5923B21FFABCC00FCC57E /* OutlineInteractorTests.swift in Sources */,
 				36DD95D321F3D48700586999 /* InsertTransactionAction.swift in Sources */,
+				36B5922E21FFA8FF00FCC57E /* MainStageProtocols.swift in Sources */,
 				36DD95E921F3D71500586999 /* DefaultDataStore.swift in Sources */,
 				36DD95FF21F7B97C00586999 /* Thunk.swift in Sources */,
 				36DD95E321F3D56700586999 /* RootState.swift in Sources */,
 				36283BD421FD0FF4004CB71B /* Services.swift in Sources */,
+				36B5923121FFA92500FCC57E /* MainStageModels.swift in Sources */,
 				36283BCA21FD0ED6004CB71B /* PersistentStoreProtocols.swift in Sources */,
 				36DD95FB21F66EE800586999 /* DeleteTransactionAction.swift in Sources */,
+				36B5924721FFBF6E00FCC57E /* OutlineModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

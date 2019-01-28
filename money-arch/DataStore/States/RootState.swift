@@ -10,6 +10,7 @@ import Foundation
 
 protocol RootState {
     var transactionsList:TransactionsListState {get}
+    var accounts:[AccountState] {get}
 }
 
 protocol MutableRootState : RootState {
@@ -18,6 +19,7 @@ protocol MutableRootState : RootState {
 
 struct RootStateImpl {
     var transactionsList:TransactionsListState
+    var accounts = [AccountState]()
     init() {
         transactionsList = TransactionsListStateImpl(offset: 0,
                                                      total: 0,

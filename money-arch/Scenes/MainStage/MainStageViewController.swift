@@ -58,3 +58,7 @@ class MainStageViewController: NSViewController {
     }
     
 }
+
+extension MainStageViewController : MainStageViewing {
+    
+}
